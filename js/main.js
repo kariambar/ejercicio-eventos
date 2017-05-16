@@ -30,11 +30,31 @@ function principal(){
 	menu.addEventListener("click", cambiaTexto)
 }
 principal();
-*/
+
 
 var cambiaTexto = function (){
     this.childNodes[1].childNodes[1].innerHTML = "Hola Mundo";
 }
+
+
+
+
+function myRecarga(){
+var home = document.queryselector("myRecarga");
+home.addEventListener("onload", function);
+alert("La pagina esta cargada");
+
+}
+*/
+var home = document.getElementsByTagName('body')[0];
+
+home.addEventListener("load", function(){
+    alert("La pagina esta cargada");
+});
+
+
+
+/*
 function principal(){
 
     var ultimo = document.querySelector("#menu-principal ul li:last-child");
